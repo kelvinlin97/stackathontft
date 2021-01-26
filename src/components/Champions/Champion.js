@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 
 const Champion = (props) => {
   const { championList } = props;
@@ -8,9 +9,18 @@ const Champion = (props) => {
         return (
           <>
             <img
+              data-tip
+              data-for={"registerTip" + champion.id}
               className="item-image"
               src={`../../public/champions/${champion.id}.png`}
             />
+            <ReactTooltip
+              id={"registerTip" + champion.id}
+              place="top"
+              effect="solid"
+            >
+              {champion.star} star + {champion.traits} traits
+            </ReactTooltip>
             <a className="item-name">{champion.name}</a>
           </>
         );

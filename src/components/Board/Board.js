@@ -105,7 +105,9 @@ export default class Board extends React.Component {
     if (this.state.statView === false) {
       return (
         <div className="board">
-          <button onClick={this.switchStatView}>Calculate Stats</button>
+          <button id="boardButton" onClick={this.switchStatView}>
+            Calculate Stats
+          </button>
           {championList.map((champion) => {
             return (
               <>
@@ -163,8 +165,10 @@ export default class Board extends React.Component {
               );
             })}
           </div>
-
-          <Graph data={d3Dataset} />
+          <h4>Overall Team Stats Over Time(seconds)</h4>
+          <div id="graphD3">
+            <Graph data={d3Dataset} />
+          </div>
           <ul style={{ listStyleType: "none" }}>
             <li> Total Offensive Stats: {d3Data.offense}</li>
             <li> Total Defensive Stats: {d3Data.defense} </li>

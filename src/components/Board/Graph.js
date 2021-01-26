@@ -78,7 +78,7 @@ const Graph = (props) => {
         height: 500,
         width: "100%",
         marginRight: "0px",
-        marginLeft: "0px",
+        marginLeft: "180px",
       }}
     >
       <g className="plot-area" />
