@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Friz Quadrata";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./font/FrizQuadrataBold.otf");
+}
+
+* {
+  font-family: "Friz Quadrata", serif;
+}
+
+#header {
+  position: relative;
+  margin: 0;
+  padding-top: 0px;
+}
+
+body {
+  background-image: url("https://i.imgur.com/MRSmpaN.jpg");
+  /* background-image: url("https://i.imgur.com/mvcfQO1.jpg"); */
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #f7f3f3;
+  text-shadow: 1.1px 1.1px black;
+}
+
+#nav {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  flex-direction: row;
+  display: flex;
+  background-color: #313073;
+}
+
+#nav li a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-right: 1px solid #ccc;
+  position: absolute;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
+  border: #2e8baf solid 3px;
+  max-width: 100%;
+  /* border-radius: 10%; */
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 3px hs1(0, 0%, 90%);
+  background-color: #313073;
+}
+
+.item-image {
+  width: 100%;
+  max-width: 50px;
+}
+
+.item-name {
+  flex-basis: 20%;
+  font-weight: bold;
+  color: #2e8baf;
+  margin: 0 0 2% 0;
+}
+
+#title {
+  font-size: 20px;
+}
+
+#imglogo {
+  max-height: 100px;
+}
+
+#d3Chart {
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-left: 22%;
+}
+
+#boardSize {
+  max-height: 500px;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 1px solid;
+  color: black;
+}
+
+.board {
+  text-align: center;
+  /* background-image: url("https://i.imgur.com/mvcfQO1.jpg"); */
+}
+
+#graph {
+  display: block;
+  margin: 0 auto;
+}
+
+.barChart {
+  background-color: #f7f3f3;
+}
+
+/*
+div.hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+} */
+
+#graphComponent {
+  display: flex;
+  flex-direction: row;
+}
+
+#listStats {
+  border-radius: 10%;
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 3px hs1(0, 0%, 90%);
+  background-color: #313073;
+  max-width: 40%;
+  margin: auto;
+  border: #2e8baf solid 3px;
+  border-width: thin;
+}
+
+#listTraits {
+  border-radius: 10%;
+  box-shadow: inset 0 0 0 2px hsl(0, 0%, 100%), 0 0 0 3px hs1(0, 0%, 90%);
+  background-color: #313073;
+  max-width: 40%;
+  margin: auto;
+  border: #2e8baf solid 3px;
+  border-width: thin;
+  margin-bottom: 20px;
+}
+
+#traitsTitle {
+  text-decoration: underline;
+
+  text-shadow: 1.1px 1.1px black;
+}
+
+#selectedChampIcon {
+  margin-left: 50px;
+}
